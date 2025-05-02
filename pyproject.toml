@@ -1,0 +1,37 @@
+[project]
+name = "wrapstorm"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "simran",email = "1036simran@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "fastapi[standard] (>=0.115.12,<0.116.0)",
+    "litellm (>=1.67.2,<2.0.0)",
+    "dspy_ai==2.4.9",
+    "wikipedia==1.4.0",
+    "sentence-transformers",
+    "toml",
+    "langchain-text-splitters",
+    "trafilatura",
+    "langchain-huggingface",
+    "qdrant-client",
+    "langchain-qdrant",
+    "numpy==1.26.4",
+    "diskcache",
+    "chardet (>=5.2.0,<6.0.0)",
+    "google-api-python-client (>=2.168.0,<3.0.0)",
+    "fake-useragent (>=2.2.0,<3.0.0)",
+    "uvicorn[standard] (>=0.34.2,<0.35.0)",
+]
+
+
+[tool.poetry]
+packages = [{include = "wrapstorm", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
