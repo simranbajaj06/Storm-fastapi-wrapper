@@ -70,7 +70,18 @@ curl -X POST http://0.0.0.1:8000/storm/query \
 
 ## Project Structure
 
-<pre> ``` wrapstorm/ ├── src/ │ └── wrapstorm/ │ ├── api/ # FastAPI routes and request models │ ├── core/ # STORM integration logic │ ├── utils/ # Helper functions │ ├── main.py # Entry point for FastAPI app │ └── storm/ # Cloned STORM repository ├── Dockerfile ├── pyproject.toml # Poetry dependency file ├── poetry.lock └── README.md ``` </pre>
+```wrapstorm/
+├── src/
+│   └── wrapstorm/
+│       ├── api/             # FastAPI routes and request models
+│       ├── core/            # STORM integration logic
+│       ├── utils/           # Helper functions
+│       ├── main.py          # Entry point for FastAPI app
+│       └── storm/           # Cloned STORM repository
+├── Dockerfile
+├── pyproject.toml           # Poetry dependency file
+├── poetry.lock
+└── README.md```
 
 ---
 
